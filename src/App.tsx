@@ -13,6 +13,7 @@ import Orders from "./pages/admin/Orders";
 import ProductsApi from "./pages/admin/ProductsApi";
 import OrdersApi from "./pages/admin/OrdersApi";
 import ToolBooking from "./pages/ToolBooking";
+import ToolsManagement from "./pages/admin/ToolsManagement";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/admin/tools" element={<Products />} />
           <Route path="/admin/tools-api" element={<ProductsApi />} />
+          <Route path="/admin/tools-management" element={<ToolsManagement />} />
           <Route path="/admin/orders" element={<Orders />} />
           <Route path="/admin/orders-api" element={<OrdersApi />} />
           
