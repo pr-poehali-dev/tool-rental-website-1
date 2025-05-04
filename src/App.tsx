@@ -11,6 +11,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import Products from "./pages/admin/Products";
 import Orders from "./pages/admin/Orders";
 import ProductsApi from "./pages/admin/ProductsApi";
+import OrdersApi from "./pages/admin/OrdersApi";
 import ToolBooking from "./pages/ToolBooking";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/admin/tools" element={<Products />} />
           <Route path="/admin/tools-api" element={<ProductsApi />} />
           <Route path="/admin/orders" element={<Orders />} />
+          <Route path="/admin/orders-api" element={<OrdersApi />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
