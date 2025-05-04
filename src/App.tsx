@@ -11,6 +11,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import Products from "./pages/admin/Products";
 import Orders from "./pages/admin/Orders";
 import ProductsApi from "./pages/admin/ProductsApi";
+import ToolBooking from "./pages/ToolBooking";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/tool/:id/booking" element={<ToolBooking />} />
           
           {/* Admin Routes */}
           <Route path="/admin" element={<Dashboard />} />
